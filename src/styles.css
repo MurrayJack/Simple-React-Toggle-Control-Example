@@ -1,0 +1,26 @@
+.group {
+  display: inline-flex;
+  gap: 1px;
+}
+
+.group.compact > button {
+  padding: 10px;
+}
+
+.group > button {
+  background: #dddddd;
+  border: 0;
+}
+
+.group > button[aria-selected="true"] {
+  background-color: blue;
+  color: white;
+}
+
+.group > button:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.group > button:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
